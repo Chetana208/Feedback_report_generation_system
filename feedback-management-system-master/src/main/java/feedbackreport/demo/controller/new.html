@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      width: 80%; /* Adjust the width as needed */
+      border: 1px solid #ddd; /* Optional: add a border for better visibility */
+      background: linear-gradient(to right,darkblue,darkblue);
+      color: white;
+    }
+    
+
+    .left-side {
+      width: 40%;
+    }
+
+    .right-side {
+      width: 50%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      margin-bottom: 16px;
+    }
+
+    button {
+      padding: 10px 16px; /* Adjust padding to make the button smaller */
+      background-color: purple;
+      margin-left:  450px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px; /* Adjust font size to make the button smaller */
+    }
+
+   
+
+    .required-symbol::before {
+      content: '\2642'; /* Male symbol */
+      margin-right: 4px;
+    }
+
+    .material-icons {
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    h1{
+          color: rgb(47, 93, 186);
+    }
+    .nav-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: darkblue;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .nav-main_socials {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-main_socials-title {
+      margin-right: 10px;
+    }
+
+    .nav-main_socials-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .nav-main_socials-item {
+      margin-right: 10px;
+      
+    }
+
+    .nav-main_socials-link img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-side">
+    <h3>TAKE THE SILK ROAD TO</h3>
+    <h1>Digitizing Your Bussiness Growth</h1>
+
+    <nav class="nav-main">
+        
+        
+        <div class="nav-main_socials">
+          <span class="nav-main_socials-title">Follow Us    </span>
+          <ul class="nav-main_socials-list">
+            <li class="nav-main_socials-item">
+              <a href="https://www.linkedin.com/company/digitalsilk/" class="nav-main_socials-link" target="_blank" rel="noopener noreferrer">
+                <img src="https://ww.digitalsilk.com/wp-content/uploads/2022/07/1n-footer.png" alt="LinkedIn">
+              </a>
+            </li>
+            <li class="nav-main_socials-item">
+              <a href="https://www.instagram.com/digitalsilk/" class="nav-main_socials-link" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.digitalsilk.com/wp-content/uploads/2022/07/insta-header.png" alt="Instagram">
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+  
+  </div>
+
+  <div class="right-side">
+    <h2>Start A Conversation With Us</h2>
+    <form>
+      <label for="name"><i class="fas fa-user-alt">  Name:</i>
+       </label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="company">
+        <i class="fa fa-home" style="font-size:24px"> Company Name:</i></label>
+      <input type="text" id="company" name="company" required>
+
+      <label for="email">
+        <i class="material-icons">email</i> Email:
+      </label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone"><i class="fa fa-phone"> Phone:</i></label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message"><i class='fa fa-comment' >Your Message:</i></label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
